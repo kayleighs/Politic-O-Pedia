@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <!-- Bootstrap Link -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/styles/styles.css">
+        <script src="https://kit.fontawesome.com/59a7a76dd2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+<body class="main">
+
+        <!-- k -->
+        <header class="">
+            <nav class="navbar navbar-expand-md h-font navbar-light ">
+                <div class="navbar-brand title-font">
+                    <h1>Politic-O-Pedia</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav ml-auto nav-font">
+                      
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#case">LogIn</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#app">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#howto">Search Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">Candidate Matcher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">Technology</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Page Introduction -->
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-12 border ks-container m-4">
+                    <section class="p-4 card loading-image">
+                        <img src="assets\Images\white-house.gif" width="500" height="500">
+                    </section>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" navbar-nav ml-auto nav-font">
+                    <li class="nav-item active ">
+                        <a class="nav-link ks-nav " href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="#login-box">Login/Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="#">Search Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Page Introduction -->
+    <div class="container main" id="home">
+        <div class="row">
+            <div class="col-md-12 border ks-container m-4">
+                <section class="p-4">
+                </section>
+            </div>
+        </div>
+        <!-- Signup/Login Form -->
+        <div class="row" id="login-box">
+            <div class="col-md-4 border mx-auto text-center ks-container ">
+                <div class=" fadeInDown">
+                    <div id="formContent" class="p-4">
+                        <div class="m-2 mt-2">
+                            <i class="far fa-user fa-3x"></i>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="username"></label>
+                                <input type="text" class="mx-auto m-2" id="inputUsername"
+                                    placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"></label>
+                                <input type="password" class="mx-auto m-2" id="inputPassword"
+                                    placeholder="Password">
+                            </div>
+                            <p id="signUpMessage"></p>
+                            <button type="login" class="mx-auto ks-button" id="login" value="login">Login</button>
+                        </form>
+                        <div class="justify-content-center">
+                            <p>Don't have an account?</p>
+                            <a id="signup" href="#">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="register-box">
+            <div class="col-md-4 border mx-auto text-center ks-container ">
+                <div class=" fadeInDown">
+                    <div id="formContent" class="p-4">
+                        <div class="m-2 mt-2">
+                            <i class="far fa-user fa-3x"></i>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="username"></label>
+                                <input type="text" class="mx-auto m-2" id="register-username"
+                                    placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password"></label>
+                                <input type="password" class="mx-auto m-2" id="register-password"
+                                    placeholder="Password">
+                            </div>
+                            <p id="signUpMessage"></p>
+                            <button type="login" class="mx-auto ks-button" id="register" value="login">Register</button>
+                        </form>
+                        <div class="justify-content-center">
+                            <p>Already have an account?</p> <a id="go-back-login" href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<<<<<<< HEAD
+        <!-- Footer -->
+        <footer class=" text-center mt-auto">
+            <div class="h-font footerText">© 2019 Politic-o-pedia
+=======
+        <!--About Section--->
+        <div class="row" id="about">
+            <div class="col-md-12 border ks-container m-4">
+                <section class="p-4">
+                    <h1 class="h-font text-center">About</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis tellus ac maximus ultrices.
+                        Etiam viverra ligula ut
+                        risus suscipit, rutrum tempus lorem convallis. Donec sollicitudin, nibh nec convallis tempus,
+                        mauris ante lobortis diam,
+                        sit amet ultrices nisi ex at orci. In ac felis iaculis, euismod arcu ut, vehicula diam.
+                        Vestibulum fringilla mi quis
+                        enim auctor, sit amet porttitor neque condimentum. Phasellus volutpat ornare ligula sed
+                        faucibus. Vestibulum
+                        sollicitudin, velit a tincidunt porta, orci sem tristique nisi, at consectetur ipsum nulla ac
+                        urna. Mauris volutpat
+                        consectetur consequat. Morbi dictum porta tortor ut vestibulum. Ut sit amet ante leo.
+                    </p>
+                </section>
+>>>>>>> ed3f7800f06fe5a1bf78ee4e0e17e5d162a9f969
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class=" text-center mt-auto">
+        <div class="h-font footerText">© 2019 Politopedia
+        </div>
+    </footer>
+</body>
+<script>
+$("#register-box").hide()
+    $("#signup").on("click", function (event) {
+        event.preventDefault();
+        $("#login-box").hide()
+        $("#register-box").show()
+    })
+
+$("#go-back-login").on("click", function (event) {
+    event.preventDefault();
+    $("#register-box").hide()
+    $("#login-box").show()
+})
+</script>
+</html>

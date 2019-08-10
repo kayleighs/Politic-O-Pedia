@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="https://kit.fontawesome.com/59a7a76dd2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body class="main">
+
+    <!-- Navigation Bar -->
+    <header class="">
+        <nav class="navbar navbar-expand-md h-font navbar-light ">
+            <div class="navbar-brand title-font">
+                <h1>Politic-O-Pedia</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>{{cadudate}}
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" navbar-nav ml-auto nav-font">
+                    <li class="nav-item active ">
+                        <a class="nav-link ks-nav " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="#">Search Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="#logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container ">
+            <div class="row">
+                <div class="col-md-12 border ks-container m-4">
+                    <section class="p-4">
+                       <section><img class="image pb-4 pr-4" src="assets/images/President-Trump-Official-Portrait.jpg">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Birthdate:</th>
+                                    <td>{{Candidates.birthdate}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Birth Location:</th>
+                                    <td>Queens, New York City{{this.birthLocation}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Political Party:</th>
+                                    <td>Republican{{this.party}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Offical Website:</th>
+                                    <td>https://www.donaldjtrump.com/{{this.website}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Current Held Office/Occupation:</th>
+                                    <td>President{{this.occupation}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    </section>
+                </div>
+            </div>
+    </section>
+
+    
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <!-- Footer -->
+    <footer class=" text-center mt-auto">
+        <div class="h-font footerText">© 2019 Politopedia
+        </div>
+    </footer>
+</body>
+
+<script>
+</script>
+
+</html>

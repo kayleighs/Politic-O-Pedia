@@ -1,0 +1,175 @@
+<body class="main">
+    <header class="">
+        <nav class="navbar navbar-expand-md h-font navbar-light ">
+            <div class="title-font">
+                <h1>Politic-O-Pedia</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" navbar-nav ml-auto nav-font">
+                    <li class="nav-item active">
+                        <a class="nav-link ks-nav" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="/candidates">View Candidates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ks-nav" href="/logout">Logout</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <div class="container partyButtons">
+            <div class="row justify-content-center">
+                <div class="col-md-6  mt-4">
+                    <span class="partyIcons ">
+                        <span class="card mx-auto text-center demCard" style="width: 18rem;">
+                            <span class="card-body">
+                                <h5 class="card-title">Democrat</h5>
+                                <p class="card-text"><i class="fas fa-democrat fa-10x mr-4 biggerBox" id="democrat-button"></i></i></p>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="col-md-6  mt-4">
+                    <span class="partyIcons">
+                        <span class="card mx-auto text-center repCard" style="width: 18rem;">
+                            <span class="card-body">
+                                <h5 class="card-title">Republican</h5>
+                                <p class="card-text"><i class="fas fa-republican fa-10x ml-4 biggerBox" id="republican-button"></i></p>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    <!--Each Republican candidate card-->
+    <section class="container hidden" id="republican-list">   
+
+        <div class="row">
+            <div class="col-md-8">
+        {{#each Candidates}}
+        {{#if isRepublican}}
+        <a class="link-to-ind-page"href="/candidates/{{fullName}}">
+        <div class="row">
+            <div class="col-md-12 border ks-container m-4 biggerBox">
+                <section class="p-4">
+                    <h1 class="h-font title-candidate-name ">{{fullName}}</h1>
+                    <section><img class="image pb-4 pr-4" src={{image}}>
+                        <table class="table table-candidates">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Full Name:</th>
+                                    <td>{{fullName}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Birthdate:</th>
+                                    <td>{{birthDate}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Birth Location:</th>
+                                    <td>{{birthLocation}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Current Location:</th>
+                                    <td>{{currentLocation}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Political Party:</th>
+                                    <td>{{politicalParty}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Offical Website:</th>
+                                    <td><a href={{website}}>{{website}}</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Current Held Office/Occupation:</th>
+                                    <td>{{occupation}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+            </div>
+        </div>
+        </a>
+        {{/if}}
+        {{/each}}
+        </div>
+        <div class="col-md-3 mx-4 my-4">
+           <div class="scrollbar" id="style-1">
+                <a class="twitter-timeline" data-height="450" noscrollbar="false" href="https://twitter.com/GOP?ref_src=twsrc%5Etfw">Tweets by GOP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>        
+        </div>
+        </div>
+        
+    </section>
+    <!--Each Democrat candidate card-->
+    <section class="container hidden" id="democrat-list">
+        <div class="row">
+            <div class="col-md-8">
+        {{#each Candidates}}
+        {{#unless isRepublican}}
+        <a class="link-to-ind-page" href="/candidates/{{fullName}}">
+        <div class="row">
+            <div class="col-md-12 border ks-container m-4 biggerBox">
+                <section class="p-4">
+                    <h1 class="h-font title-candidate-name ">{{fullName}}</h1>
+                    <section><img class="image pb-4 pr-4" src={{image}}>
+                        <table class="table table-candidates">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Name:</th>
+                                    <td>{{fullName}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Birthdate:</th>
+                                    <td>{{birthDate}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Birth Location:</th>
+                                    <td>{{birthLocation}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Current Location:</th>
+                                    <td>{{currentLocation}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Political Party:</th>
+                                    <td>{{politicalParty}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Offical Website:</th>
+                                    <td><a href={{website}}>{{website}}</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Current Held Office/Occupation:</th>
+                                    <td>{{occupation}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+            </div>
+        </div>
+        </a>
+        {{/unless}}
+        {{/each}}
+        </div>
+        <div class="col-md-3 mx-4 my-4">
+           <div class="scrollbar" id="style-1">
+                <a class="twitter-timeline" data-height="450" noscrollbar="false" href="https://twitter.com/TheDemocrats?ref_src=twsrc%5Etfw">Tweets by TheDemocrats</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>        
+        </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class=" text-center mt-auto">
+        <div class="h-font footerText">© 2019 Politopedia
+        </div>
+    </footer>
+</body>
