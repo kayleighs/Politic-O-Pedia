@@ -25,6 +25,9 @@ module.exports = function(app) {
   app.get("/home", function(req, res) {
     res.render("index-logged-in", {});
   });
+  app.get("/logout", function(req, res) {
+    res.render("index", {});
+  });
 
   /*   app.get("/comments", function(req,res) {
     db.Comment.findAll({}).then(function(result)) {
