@@ -1,0 +1,283 @@
+.list-group-item {
+  line-height: 2.5;
+}
+/* General Styles Start */
+
+/*-----------------------*/
+
+html {
+    position: relative;
+    /*for sticky footer */
+    min-height: 100%;
+    /*for sticky footer */
+    min-width: 100%;
+}
+
+body {
+    background: url("../images/navy_blueKs2.png");
+    margin-bottom: 40px;
+    /*for sticky footer */
+    color: #212121;
+}
+
+.ks-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 0px;
+
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Declaration'; /*a name to be used later*/
+    src: url('../USDeclaration.ttf'); /*URL to font*/
+}
+.h-font {
+    font-family: 'EB Garamond', serif;
+}
+.title-candidate-name {
+    color: black;
+
+}
+.link-to-ind-page:hover {
+    text-decoration: none;
+    color: black;
+    text-decoration-color: black;
+}
+.title-font {
+    font-family: 'Declaration', serif;
+    font-size: .5rem;
+    line-height: 1;
+    padding-top: 1.5rem;
+}
+
+/*Navigation Bar*/
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(202, 202, 202);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    font-size: 22px;
+    transition: .5s ease;
+    color: rgb(255, 255, 255);
+}
+
+.ks-nav {
+    font-size: 1.2rem;
+    border-right: 1px solid rgb(206, 206, 206);
+    padding: 0;
+}
+.ks-nav-email {
+    font-size: 1.2rem;
+    padding: 0;
+    color: rgb(202,202,202);
+}
+
+.navbar-nav li:last-child a {
+    border: none;
+}
+
+.navbar {
+    overflow: hidden;
+    padding: 0px 25px;
+/*     background-color: rgba(255, 255, 255, .7); */
+/*    background-image: linear-gradient(to right, rgba(255, 255, 255, .7), rgba(20, 105, 233, 0.7),rgba(240, 25, 25, 0.7)); */
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    background: linear-gradient(270deg, rgb(255, 255, 255),  rgba(20, 105, 233, 0.7),rgba(240, 25, 25, 0.7));
+background-size: 600% 600%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /*vertically centers */
+}
+
+.footerText {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+/* KS-Button Styles */
+
+.ks-button {
+    background-color: rgb(14, 17, 219);
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    /*   background-color: transparent; */
+    border: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.ks-button:hover {
+    color: #fff;
+    background-color: rgb(0, 47, 255);
+    border-color: rgb(14, 17, 219);
+    text-decoration: none;
+}
+
+.ks-button:focus {
+    box-shadow: 0 0 0 0.2rem rgb(14, 17, 219,.5);
+    outline: 0;
+}
+
+.ks-button:active {
+    color: #fff;
+    background-color: rgb(219, 21, 14);
+    border-color: rgb(22, 26, 228);
+}
+
+/*-----------------------*/
+
+/* General Styles End */
+
+/* Home Page Styles Start */
+
+/*-----------------------------*/
+
+.main {
+    margin-top: 78px;
+    margin-bottom: 78px;
+}
+
+
+/*-Login-- */
+.register-form {
+    display:none;
+}
+#login {
+    display: block;
+}
+
+#password {
+    display: block;
+}
+
+.fa-user {
+    color: rgb(14, 17, 219);
+}
+
+input {
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgba(14, 17, 219, .5);
+}
+
+a {
+    color: rgb(14, 17, 219);
+}
+
+a:hover {
+    color: rgb(13, 16, 156);
+}
+
+.loading-image {
+    display:block;
+    margin: 0 auto;
+    }
+
+
+/*--Candidates page--*/
+
+.image {
+    width: 250px;
+    height: auto;
+    float: left;
+
+}
+.table {
+    float: left;
+    width: 60%;
+}
+.partyIcons {
+    color: white;
+    margin: auto;
+    text-align:center;
+}
+.biggerBox:hover {
+    transform: translateY(-10px) scale(1.03);
+    transition: all 0.7s ease 0s;
+}
+
+.demCard {
+    background-color: rgba(0, 60, 255, 0.3);
+        border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 0px;
+
+
+}
+.repCard {
+    background-color: rgba(255, 0, 0, 0.3);
+        border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 0px;
+
+}
+
+.clear {
+    clear:both;
+}
+
+.ks-com-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 0px;
+}
+
+.hidden {
+    display: none;
+}
