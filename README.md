@@ -8,7 +8,7 @@ Politic-O-Pedia is a full stack website that shows users the candidates for the 
 * Clicking on a candidate will take you to a new page where users can debate.
 
 ## Instructions
-[Visit this link to try on Heroku](https://politic-o-pedia.herokuapp.com/)
+[Visit this link to try on Heroku](https://salty-harbor-18357.herokuapp.com/)
 <br>
 
 ### To Use
