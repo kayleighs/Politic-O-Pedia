@@ -14,8 +14,9 @@ Politic-O-Pedia is a full stack website that shows users the candidates for the 
 ### To Use
 Start by registering or loggin in! Then click on the View Candidates tab to see information about the candidates
 
-<img src="./public/assets/img/example.gif" width="800">
- 
+<img src="./public/images/example-index.JPG" width="800">
+
+<img src="./public/images/Politic-O-Pedia.webm" width="800">
 ## Built With
 * node.js
 * JavaScript
